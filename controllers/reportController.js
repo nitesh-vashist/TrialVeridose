@@ -248,6 +248,13 @@ export const finalizeTrialReports = async (req, res) => {
         success: false,
         error: 'No reports found for this trial'
       });
+      
+    }
+    if (reports.length !== trial.sampleSize) {
+      return res.status(400).json({
+        success: false,
+        error: 'Not all reports submitted for this trial'
+      });
     }
 
     // Check if final report already exists
@@ -336,8 +343,8 @@ export const finalizeTrialReports = async (req, res) => {
     let aiAnalysisResult;
     
     try {
-      if (process.env.NODE_ENV === 'production' && process.env.AI_SERVICE_URL) {
-        aiAnalysisResult = await analyzeReport(finalReport);
+      if ( process.env.AI_SERVICE_URL) {
+        aiAnalysisResult = await analyzeReport(reports);
       } else {
         // Use mock analysis for development/testing
         aiAnalysisResult = mockAnalyzeReport(finalReport);

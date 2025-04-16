@@ -16,17 +16,17 @@ export const analyzeReport = async (finalReport) => {
     }
     
     // Prepare data for AI analysis
-    const analysisData = {
-      trialId: finalReport.trial.toString(),
-      drugName: finalReport.drugName,
-      patientReports: finalReport.patientReports || [],
-      aggregateData: {
-        totalPatients: finalReport.totalPatients,
-        averageImprovementScore: finalReport.averageImprovementScore,
-        sideEffectDistribution: finalReport.sideEffectDistribution,
-        healthStatusDistribution: finalReport.healthStatusDistribution
-      }
-    };
+    // const analysisData = {
+    //   trialId: finalReport.trial.toString(),
+    //   drugName: finalReport.drugName,
+    //   patientReports: finalReport.patientReports || [],
+    //   aggregateData: {
+    //     totalPatients: finalReport.totalPatients,
+    //     averageImprovementScore: finalReport.averageImprovementScore,
+    //     sideEffectDistribution: finalReport.sideEffectDistribution,
+    //     healthStatusDistribution: finalReport.healthStatusDistribution
+    //   }
+    // };
     
     // Send data to AI service
     const response = await fetch(AI_SERVICE_URL, {
@@ -35,7 +35,7 @@ export const analyzeReport = async (finalReport) => {
         'Content-Type': 'application/json',
         'Authorization': `Bearer ${process.env.AI_SERVICE_API_KEY}`
       },
-      body: JSON.stringify(analysisData)
+      body: JSON.stringify(finalReport)
     });
     
     if (!response.ok) {
