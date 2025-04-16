@@ -1,0 +1,17 @@
+2025-04-16 00:33:42 error: User role hospital not authorized to access this route
+2025-04-16 00:36:47 error: User role hospital not authorized to access this route
+2025-04-16 00:40:13 error: Trial initiation error: Trial validation failed: initiationHash: Path `initiationHash` is required.
+2025-04-16 00:43:37 error: Trial initiation error: Trial validation failed: initiationHash: Path `initiationHash` is required.
+2025-04-16 01:10:51 error: Trial initiation error: Trial validation failed: initiationHash: Path `initiationHash` is required.
+2025-04-16 01:10:58 error: Trial initiation error: Trial validation failed: initiationHash: Path `initiationHash` is required.
+2025-04-16 01:18:24 error: Trial initiation error: Trial validation failed: initiationHash: Path `initiationHash` is required.
+2025-04-16 01:18:33 error: Trial initiation error: Trial validation failed: initiationHash: Path `initiationHash` is required.
+2025-04-16 11:40:26 error: Trial initiation error: Trial validation failed: initiationHash: Path `initiationHash` is required.
+2025-04-16 11:41:51 error: Trial initiation error: Trial validation failed: initiationHash: Path `initiationHash` is required.
+2025-04-16 11:58:16 error: Error storing hash on blockchain: Cannot read properties of undefined (reading 'JsonRpcProvider')
+2025-04-16 11:58:16 error: Trial initiation error: Blockchain error: Cannot read properties of undefined (reading 'JsonRpcProvider')
+2025-04-16 12:16:49 error: Trial initiation error: E11000 duplicate key error collection: test.trials index: trialCode_1 dup key: { trialCode: null }
+2025-04-16 13:04:23 error: Trial initiation error: E11000 duplicate key error collection: test.trials index: trialCode_1 dup key: { trialCode: null }
+2025-04-16 13:40:10 error: Trial initiation error: E11000 duplicate key error collection: test.trials index: trialCode_1 dup key: { trialCode: null }
+2025-04-16 14:10:55 error: Report submission error: Report validation failed: reportHash: Path `reportHash` is required.
+2025-04-16 14:12:34 error: Report submission error: Report validation failed: reportHash: Path `reportHash` is required.

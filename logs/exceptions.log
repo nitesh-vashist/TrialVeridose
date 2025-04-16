@@ -1,0 +1,6 @@
+2025-04-16 01:24:06 error: uncaughtException: ETHEREUM_RPC_URL is not defined
+ReferenceError: ETHEREUM_RPC_URL is not defined
+    at file:///C:/Users/nites/Hackurons/Veridose/backend2/config/blockchain.js:5:17
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:547:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5)
