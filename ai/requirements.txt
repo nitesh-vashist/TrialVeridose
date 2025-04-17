@@ -1,0 +1,9 @@
+pandas
+numpy
+scikit-learn
+joblib
+spacy
+vaderSentiment
+tensorflow
+fastapi
+uvicorn[standard]
